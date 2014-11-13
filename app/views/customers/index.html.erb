@@ -1,0 +1,9 @@
+<h1>All Customers</h1>
+<span class="links"><%= link_to 'New Customer', new_customer_path %> - Missing Emails</span>
+<div>
+<% @customers.each_with_index do |customer, idx| %>
+  <div id="customer"><div class="link"><%= link_to 'Edit', edit_customer_path(customer) %> <%= link_to 'X', customer, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+  <%= render partial: 'customers',
+          object: customer %></div>
+<%end%>
+</div>

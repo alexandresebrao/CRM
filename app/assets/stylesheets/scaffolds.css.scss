@@ -1,0 +1,88 @@
+body {
+  background-color: #ccc;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+A:visited  {color: #555; text-decoration: none}
+A:link  {color: #555; text-decoration: none}
+A:active  {color: #555; text-decoration: none}
+A:hover   {color: #555; text-decoration: underline}
+
+div#customer {
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 10px;
+  background-color: #FFF;
+  width: 300px;
+  float:left;
+  height:400px;
+}
+
+div#customer label{
+  font-weight: bold;
+}
+
+p.spanbox {
+  width:100%;
+  margin-bottom: 6px;
+}
+
+div.link {
+  text-align: right;
+  width: 95%;
+}
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}
