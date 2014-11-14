@@ -5,9 +5,11 @@ class FinderController < ApplicationController
 
   def alphabetized
   	@customers = Customer.order(:fullname)
+  	render :index
   end
 
   def missingemail
   	@customers = Customer.where(email: "")
+  	render :index
   end
 end

@@ -4,3 +4,5 @@
 <p class="pbox"><label>Phone:</label> <%= customers.phonenumber %></p>
 <p class="pbox"><label>Email:</label> <%= customers.email %></p>
 <p class="pbox"><label>Notes:</label> <%= customers.notes %></p>
+
+<p class="pbox"><label>Province:</label> <% if customers.province.present? %><%= customers.province.name %><%else%>None<%end%></p>

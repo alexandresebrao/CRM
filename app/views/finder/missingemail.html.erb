@@ -1,9 +1,0 @@
-<h1>All Customers</h1>
-<span class="links"><%= link_to 'New Customer', new_customer_path %> - <%= link_to 'Missing Emails', finder_missingemail_path %> - <%= link_to 'Alphabetized Order', finder_alphabetized_path %></span>
-<div>
-<% @customers.each_with_index do |customer, idx| %>
-  <div id="customer">
-  <%= render partial: 'customers/customers',
-          object: customer %></div>
-<%end%>
-</div>
