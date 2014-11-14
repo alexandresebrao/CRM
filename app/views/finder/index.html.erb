@@ -3,7 +3,7 @@
 <div>
 <% @customers.each_with_index do |customer, idx| %>
   <div id="customer">
-  <%= render partial: 'customers',
+  <%= render partial: 'customers/customers',
           object: customer %></div>
 <%end%>
 </div>
